@@ -25,7 +25,7 @@
 			"cc/cvTypes/photoConstants.cc",
 			"cc/cvTypes/videoCaptureProps.cc",
 			"cc/core/core.cc",
-			# "cc/core/Mat.cc",
+			"cc/core/Mat.cc",
 			"cc/core/MatImgproc.cc",
 			# "cc/core/MatXimgproc.cc",
 			"cc/core/MatCalib3d.cc",
