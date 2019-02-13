@@ -20,9 +20,9 @@
 // #ifdef HAVE_XFEATURES2D
 // #include "modules/xfeatures2d/xfeatures2d.h"
 // #endif // HAVE_XFEATURES2D
-#ifdef HAVE_TEXT
-#include "modules/text/text.h"
-#endif // HAVE_TEXT
+// #ifdef HAVE_TEXT
+// #include "modules/text/text.h"
+// #endif // HAVE_TEXT
 #ifdef HAVE_FACE
 #include "modules/face/face.h"
 #endif // HAVE_FACE
@@ -85,10 +85,10 @@ void init(v8::Local<v8::Object> target) {
 // 	Nan::Set(xmodules, FF_NEW_STRING("xfeatures2d"), Nan::New(true));
 // 	XFeatures2d::Init(target);
 // #endif // HAVE_XFEATURES2D
-#ifdef HAVE_TEXT
-	Nan::Set(xmodules, FF_NEW_STRING("text"), Nan::New(true));
-	Text::Init(target);
-#endif // HAVE_TEXT
+// #ifdef HAVE_TEXT
+// 	Nan::Set(xmodules, FF_NEW_STRING("text"), Nan::New(true));
+// 	Text::Init(target);
+// #endif // HAVE_TEXT
 #ifdef HAVE_FACE
 	Nan::Set(xmodules, FF_NEW_STRING("face"), Nan::New(true));
 	Face::Init(target);
