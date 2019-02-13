@@ -14,9 +14,9 @@
 #ifdef HAVE_TRACKING
 #include "modules/tracking/tracking.h"
 #endif // HAVE_TRACKING
-#ifdef HAVE_XIMGPROC
-#include "modules/ximgproc/ximgproc.h"
-#endif // HAVE_XIMGPROC
+// #ifdef HAVE_XIMGPROC
+// #include "modules/ximgproc/ximgproc.h"
+// #endif // HAVE_XIMGPROC
 // #ifdef HAVE_XFEATURES2D
 // #include "modules/xfeatures2d/xfeatures2d.h"
 // #endif // HAVE_XFEATURES2D
@@ -77,10 +77,10 @@ void init(v8::Local<v8::Object> target) {
 	Nan::Set(xmodules, FF_NEW_STRING("tracking"), Nan::New(true));
 	Tracking::Init(target);
 #endif // HAVE_TRACKING
-#ifdef HAVE_XIMGPROC
-	Nan::Set(xmodules, FF_NEW_STRING("ximgproc"), Nan::New(true));
-	XImgproc::Init(target);
-#endif // HAVE_XIMGPROC
+// #ifdef HAVE_XIMGPROC
+// 	Nan::Set(xmodules, FF_NEW_STRING("ximgproc"), Nan::New(true));
+// 	XImgproc::Init(target);
+// #endif // HAVE_XIMGPROC
 // #ifdef HAVE_XFEATURES2D
 // 	Nan::Set(xmodules, FF_NEW_STRING("xfeatures2d"), Nan::New(true));
 // 	XFeatures2d::Init(target);
