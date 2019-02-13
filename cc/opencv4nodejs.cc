@@ -17,9 +17,9 @@
 #ifdef HAVE_XIMGPROC
 #include "modules/ximgproc/ximgproc.h"
 #endif // HAVE_XIMGPROC
-#ifdef HAVE_XFEATURES2D
-#include "modules/xfeatures2d/xfeatures2d.h"
-#endif // HAVE_XFEATURES2D
+// #ifdef HAVE_XFEATURES2D
+// #include "modules/xfeatures2d/xfeatures2d.h"
+// #endif // HAVE_XFEATURES2D
 #ifdef HAVE_TEXT
 #include "modules/text/text.h"
 #endif // HAVE_TEXT
@@ -81,10 +81,10 @@ void init(v8::Local<v8::Object> target) {
 	Nan::Set(xmodules, FF_NEW_STRING("ximgproc"), Nan::New(true));
 	XImgproc::Init(target);
 #endif // HAVE_XIMGPROC
-#ifdef HAVE_XFEATURES2D
-	Nan::Set(xmodules, FF_NEW_STRING("xfeatures2d"), Nan::New(true));
-	XFeatures2d::Init(target);
-#endif // HAVE_XFEATURES2D
+// #ifdef HAVE_XFEATURES2D
+// 	Nan::Set(xmodules, FF_NEW_STRING("xfeatures2d"), Nan::New(true));
+// 	XFeatures2d::Init(target);
+// #endif // HAVE_XFEATURES2D
 #ifdef HAVE_TEXT
 	Nan::Set(xmodules, FF_NEW_STRING("text"), Nan::New(true));
 	Text::Init(target);
