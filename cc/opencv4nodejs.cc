@@ -5,12 +5,12 @@
 #include "core/core.h"
 #include "modules/io/io.h"
 #include "modules/video/video.h"
-#include "modules/photo/photo.h"
+// #include "modules/photo/photo.h"
 #include "modules/calib3d/calib3d.h"
 #include "modules/imgproc/imgproc.h"
 #include "modules/features2d/features2d.h"
 #include "modules/objdetect/objdetect.h"
-#include "modules/machinelearning/machinelearning.h"
+// #include "modules/machinelearning/machinelearning.h"
 // #ifdef HAVE_TRACKING
 // #include "modules/tracking/tracking.h"
 // #endif // HAVE_TRACKING
@@ -63,12 +63,12 @@ void init(v8::Local<v8::Object> target) {
 	Core::Init(target);
   Io::Init(target);
 	Video::Init(target);
-  Photo::Init(target);
+//   Photo::Init(target);
   Calib3d::Init(target);
   Imgproc::Init(target);
   Features2d::Init(target);
   Objdetect::Init(target);
-	MachineLearning::Init(target);
+	// MachineLearning::Init(target);
 #if CV_VERSION_MINOR > 2
 	Nan::Set(xmodules, FF_NEW_STRING("dnn"), Nan::New(true));
 	Dnn::Init(target);
