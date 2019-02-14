@@ -1,6 +1,6 @@
 #include "Mat.h"
 #include "MatImgproc.h"
-#include "MatCalib3d.h"
+// #include "MatCalib3d.h"
 #include "MatBindings.h"
 
 // #ifdef HAVE_XIMGPROC
@@ -115,7 +115,7 @@ NAN_MODULE_INIT(Mat::Init) {
   FF_PROTO_SET_MAT_OPERATIONS(ctor);
 
   MatImgproc::Init(ctor);
-  MatCalib3d::Init(ctor);
+  // MatCalib3d::Init(ctor);
   // #ifdef HAVE_XIMGPROC
   // MatXimgproc::Init(ctor);
   // #endif // HAVE_XIMGPROC

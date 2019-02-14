@@ -6,9 +6,9 @@
 #include "modules/io/io.h"
 #include "modules/video/video.h"
 // #include "modules/photo/photo.h"
-#include "modules/calib3d/calib3d.h"
+// #include "modules/calib3d/calib3d.h"
 #include "modules/imgproc/imgproc.h"
-#include "modules/features2d/features2d.h"
+// #include "modules/features2d/features2d.h"
 #include "modules/objdetect/objdetect.h"
 // #include "modules/machinelearning/machinelearning.h"
 // #ifdef HAVE_TRACKING
@@ -64,9 +64,9 @@ void init(v8::Local<v8::Object> target) {
   Io::Init(target);
 	Video::Init(target);
 //   Photo::Init(target);
-  Calib3d::Init(target);
+//   Calib3d::Init(target);
   Imgproc::Init(target);
-  Features2d::Init(target);
+//   Features2d::Init(target);
   Objdetect::Init(target);
 	// MachineLearning::Init(target);
 // #if CV_VERSION_MINOR > 2
