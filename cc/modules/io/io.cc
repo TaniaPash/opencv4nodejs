@@ -2,8 +2,8 @@
 #include "ioBindings.h"
 
 NAN_MODULE_INIT(Io::Init) {
-  VideoCapture::Init(target);
-  VideoWriter::Init(target);
+  // VideoCapture::Init(target);
+  // VideoWriter::Init(target);
 
   Nan::SetMethod(target, "imread", Imread);
   Nan::SetMethod(target, "imshow", Imshow);

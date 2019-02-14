@@ -2,8 +2,8 @@
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgproc.hpp>
 #include "Mat.h"
-#include "VideoCapture.h"
-#include "VideoWriter.h"
+// #include "VideoCapture.h"
+// #include "VideoWriter.h"
 #include "CatchCvExceptionWorker.h"
 
 #ifndef __FF_IO_H_
