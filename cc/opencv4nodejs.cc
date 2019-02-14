@@ -27,9 +27,9 @@
 #include "modules/face/face.h"
 #endif // HAVE_FACE
 
-#if CV_VERSION_MINOR > 2
-#include "modules/dnn/dnn.h"
-#endif
+// #if CV_VERSION_MINOR > 2
+// #include "modules/dnn/dnn.h"
+// #endif
 
 int customCvErrorHandler(int status, const char* func_name, const char* err_msg, const char* file_name, int line, void* userdata) {
     std::string msg = "OpenCV Error: (" + std::string(err_msg) + ")"
@@ -69,10 +69,10 @@ void init(v8::Local<v8::Object> target) {
   Features2d::Init(target);
   Objdetect::Init(target);
 	// MachineLearning::Init(target);
-#if CV_VERSION_MINOR > 2
-	Nan::Set(xmodules, FF_NEW_STRING("dnn"), Nan::New(true));
-	Dnn::Init(target);
-#endif
+// #if CV_VERSION_MINOR > 2
+// 	Nan::Set(xmodules, FF_NEW_STRING("dnn"), Nan::New(true));
+// 	Dnn::Init(target);
+// #endif
 // #ifdef HAVE_TRACKING
 // 	Nan::Set(xmodules, FF_NEW_STRING("tracking"), Nan::New(true));
 // 	Tracking::Init(target);
