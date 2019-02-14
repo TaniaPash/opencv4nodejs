@@ -4,7 +4,7 @@
 #include "cvTypes/cvTypes.h"
 #include "core/core.h"
 #include "modules/io/io.h"
-#include "modules/video/video.h"
+// #include "modules/video/video.h"
 // #include "modules/photo/photo.h"
 // #include "modules/calib3d/calib3d.h"
 #include "modules/imgproc/imgproc.h"
@@ -62,7 +62,7 @@ void init(v8::Local<v8::Object> target) {
 	CvTypes::Init(target);
 	Core::Init(target);
   Io::Init(target);
-	Video::Init(target);
+	// Video::Init(target);
 //   Photo::Init(target);
 //   Calib3d::Init(target);
   Imgproc::Init(target);
